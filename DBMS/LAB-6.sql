@@ -55,7 +55,7 @@ SELECT RAND() * 100 AS RANDOM
 --A (String Functions)
 
 
---1. Find the length of following. (I) NULL (II) ‘ hello ’ (III) Blank
+--1. Find the length of following. (I) NULL (II) â€˜ hello â€™ (III) Blank
 SELECT LEN('NULL') AS LENGTH, LEN('HELLO') AS LENGTH, LEN('BLANK') AS LENGTH
 
 --2. Display your name in lower & upper case.
@@ -67,11 +67,11 @@ SELECT SUBSTRING('ROHIT SHARMA',1,3) AS SUBSTRING_VALUE
 --4. Display 3rd to 10th character of your name.
 SELECT SUBSTRING('VIRAT KOHLI',3,10) AS SUBSTRING_VALUE
 
---5. Write a query to convert ‘abc123efg’ to ‘abcXYZefg’ & 
---‘abcabcabc’ to ‘ab5ab5ab5’ using REPLACE.
+--5. Write a query to convert â€˜abc123efgâ€™ to â€˜abcXYZefgâ€™ & 
+--â€˜abcabcabcâ€™ to â€˜ab5ab5ab5â€™ using REPLACE.
 SELECT REPLACE('ABC123EFG','123','XYZ') AS REPLACE, REPLACE('ABCABCABC','C','5') AS REPLACE
 
---6. Write a query to display ASCII code for ‘a’,’A’,’z’,’Z’, 0, 9.
+--6. Write a query to display ASCII code for â€˜aâ€™,â€™Aâ€™,â€™zâ€™,â€™Zâ€™, 0, 9.
 SELECT ASCII('a') AS ASCII, ASCII('A') AS ASCII, ASCII('z') AS ASCII, ASCII('Z') AS ASCII,
 ASCII('0') AS ASCII, ASCII('9') AS ASCII
 
@@ -80,17 +80,17 @@ ASCII('0') AS ASCII, ASCII('9') AS ASCII
 SELECT CHAR(97) AS CHARACTERVALUE, CHAR(65) AS CHARACTERVALUE, CHAR(122) AS CHARACTERVALUE, CHAR(90) AS CHARACTERVALUE
 SELECT CHAR(48) AS CHARACTERVALUE, CHAR(57) AS CHARACTERVALUE
 
---8. Write a query to remove spaces from left of a given string ‘hello world ‘.
+--8. Write a query to remove spaces from left of a given string â€˜hello world â€˜.
 SELECT LTRIM('HELLO WORLD') AS LEFTTRIM
 
---9. Write a query to remove spaces from right of a given string ‘ hello world ‘.
+--9. Write a query to remove spaces from right of a given string â€˜ hello world â€˜.
 SELECT RTRIM('HELLO WORLD') AS RIGHTTRIM
 
---10. Write a query to display first 4 & Last 5 characters of ‘SQL Server’.
+--10. Write a query to display first 4 & Last 5 characters of â€˜SQL Serverâ€™.
 SELECT LEFT('SQL SERVER',4) AS LEFT_DISPLAY
 SELECT RIGHT('SQL SERVER',5) AS RIGHT_DISPLAY
 
---11. Write a query to convert a string ‘1234.56’ to number (Use cast and convert function).
+--11. Write a query to convert a string â€˜1234.56â€™ to number (Use cast and convert function).
 SELECT CAST(1234.56 AS INT) AS CAST_VALUE
 SELECT CONVERT(INT, 1234.56) AS CONVERT_VALUE
 
@@ -104,7 +104,7 @@ SELECT SPACE(10) + 'JASPREET BOOMRAH' AS SPACEVALUE
 --14. Combine two strings using + sign as well as CONCAT ().
 SELECT 'NEERAJ' + SPACE(2) + 'CHOPRA' AS CONCAT, CONCAT('LAXYA','SEN') AS CONCAT
 
---15. Find reverse of “Darshan”.
+--15. Find reverse of â€œDarshanâ€.
 SELECT REVERSE('KINGKOHLI') AS REVERSEVALUE 
 
 --16. Repeat your name 3 times.
@@ -201,11 +201,8 @@ SELECT 55 % 3 AS REMAINDER_VALUE
 --5. Find out value of 23 raised to 2nd power and 14 raised 3rd power.
 SELECT POWER(23,2) AS POWER_VALUE
 SELECT POWER(14,3) AS POWER_VALUE
-
+	
 --C
-
---B
-
 --1. Find the length of FirstName and LastName columns
 SELECT LEN(FIRSTNAME) FROM STUDENT
 SELECT LEN(LASTNAME) FROM STUDENT
@@ -226,14 +223,3 @@ SELECT SUBSTRING(WEBSITE,3,10) FROM STUDENT
 --of Website column.
 SELECT SUBSTRING(WEBSITE,1,3) FROM STUDENT
 SELECT SUBSTRING(WEBSITE,6,5) FROM STUDENT
-
---> PART - C
-
---1. Put 10 space before FirstName using function.
---2. Combine FirstName and LastName columns using + sign as well as CONCAT ().
---3. Combine all columns using + sign as well as CONCAT ().
---4. Find reverse of FirstName column.
---5. Repeat FirstName column 3 times
---6. Give the Names which contains 5 characters.
---7. Combine the result as <FirstName> Lives in <City>.
---8. Combine the result as Student_ID of < FirstName > is <StuID> .
