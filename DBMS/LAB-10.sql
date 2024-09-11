@@ -6,11 +6,11 @@ CREATE TABLE STUDENT_INFO(
    Bklog INT
 );
 INSERT INTO STUDENT_INFO VALUES(101 ,'Raju', 'CE', 8.80, 0),
-								(102, 'Amit', 'CE', 2.20 ,3),
-								(103,' Sanjay',' ME', 1.50, 6),
-								(104 ,'Neha',' EC' ,7.65, 1),
-								(105 ,'Meera ','EE' ,5.52, 2),
-								(106 ,'Mahesh', 'EC' ,4.50, 3)
+				(102, 'Amit', 'CE', 2.20 ,3),
+				(103,' Sanjay',' ME', 1.50, 6),
+				(104 ,'Neha',' EC' ,7.65, 1),
+				(105 ,'Meera ','EE' ,5.52, 2),
+				(106 ,'Mahesh', 'EC' ,4.50, 3)
 --Create a view Personal with all columns.
  CREATE VIEW Personal
  AS
