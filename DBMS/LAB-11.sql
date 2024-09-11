@@ -7,11 +7,11 @@ CREATE TABLE STU_INFO(
 )
 
 INSERT INTO STU_INFO VALUES
-                    (101, 'Raju', 'CE'),
-                    (102, 'Amit', 'CE'),
-                    (103, 'Sanjay', 'ME'),
-                    (104, 'Neha', 'EC'),
-                    (105, 'Meera', 'EE'),
+         (101, 'Raju', 'CE'),
+	  (102, 'Amit', 'CE'),
+        (103, 'Sanjay', 'ME'),
+        (104, 'Neha', 'EC'),
+         (105, 'Meera', 'EE'),
        
 
 CREATE TABLE RESULT(
@@ -63,10 +63,10 @@ INSERT INTO EMPLOYEE_MASTER VALUES
 --6. Display Rno, Name, Branch and SPI of all students.
        SELECT STU_INFO.Rno, STU_INFO.Name, STU_INFO.Branch, RESULT.SPI FROM STU_INFO JOIN RESULT ON STU_INFO.Rno = RESULT.Rno
 
---7. Display Rno, Name, Branch and SPI of CE branch’s student only.
+--7. Display Rno, Name, Branch and SPI of CE branchâ€™s student only.
        SELECT STU_INFO.Rno, STU_INFO.Name, STU_INFO.Branch, RESULT.SPI  FROM STU_INFO JOIN RESULT ON STU_INFO.Rno = RESULT.Rno WHERE STU_INFO.Branch = 'CE'
 
---8. Display Rno, Name, Branch and SPI of other than EC branch’s student only.
+--8. Display Rno, Name, Branch and SPI of other than EC branchâ€™s student only.
        SELECT STU_INFO.Rno, STU_INFO.Name, STU_INFO.Branch, RESULT.SPI FROM STU_INFO JOIN RESULT ON STU_INFO.Rno = RESULT.Rno  WHERE STU_INFO.Branch <> 'EC'
 
 --9. Display average result of each branch.
@@ -85,5 +85,5 @@ INSERT INTO EMPLOYEE_MASTER VALUES
 SELECT STU_INFO.Branch, MAX(RESULT.SPI) FROM STU_INFO JOIN RESULT ON STU_INFO.Rno = RESULT.Rno GROUP BY STU_INFO.Branch ORDER BY MAX(RESULT.SPI) DESC
 
 --C
---1. Retrieve the names of employee along with their manager’s name from the Employee table.
+--1. Retrieve the names of employee along with their managerâ€™s name from the Employee table.
 
