@@ -35,12 +35,12 @@ CREATE TABLE EMPLOYEE_MASTER(
 )
 
 INSERT INTO EMPLOYEE_MASTER VALUES
-							('E01', 'Tarun', NULL),
-							('E02', 'Rohan', 'E02'),
-							('E03', 'Priya', 'E01'),
-							('E04', 'Milan', 'E03'),
-							('E05', 'Jay', 'E01'),
-							('E06', 'Anjana', 'E04')
+				('E01', 'Tarun', NULL),
+				('E02', 'Rohan', 'E02'),
+				('E03', 'Priya', 'E01'),
+				('E04', 'Milan', 'E03'),
+				('E05', 'Jay', 'E01'),
+				('E06', 'Anjana', 'E04')
 
 
 --A
