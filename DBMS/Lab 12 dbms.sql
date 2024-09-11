@@ -91,8 +91,7 @@ SELECT D.DepartmentName,COUNT(P.PersonName) FROM PERSON AS P JOIN DEPT AS D ON P
 SELECT D.DepartmentName,COUNT(P.PersonName) FROM PERSON AS P JOIN DEPT AS D ON P.DepartmentID=D.DepartmentID GROUP BY D.DepartmentName HAVING COUNT(P.PersonName)>2
 
 --3 Give a 10% increment in the computer department employee’s salary. (Use Update)
-Update P
-SET P.SALARY=1.1*P.SALARY
+Update P SET P.SALARY=1.1*P.SALARY
 FROM PERSON AS P INNER JOIN DEPT AS D
 ON P.DepartmentID=D.DepartmentID
 WHERE D.DepartmentName='Computer'
